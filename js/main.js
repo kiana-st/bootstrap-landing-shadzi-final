@@ -96,3 +96,23 @@ https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js
         }
     });
   });
+
+
+
+//   function setCookie( name, value , exdays) {
+//     var mydate ,expires , user;
+//     user = document.getElementById("user").value;
+//     mydate = new Date();
+//     mydate.setTime(mydate.getTime() + (exdays*24*60*60*1000));
+//     expires = "expires="+ mydate.toUTCString();
+//     document.cookie = name + "=" + value + ";" + expires + ";path=/";
+//     if( value == "" ){
+//       alert("بی زحمت یه چیزی وارد کن");
+//     }else{
+//       setCookie("user", value , 365);
+//     }
+//   }
+
+
+//     fetch("https://testapi.shadzi.club/campaigns/digikalla/user/submit",{
+
