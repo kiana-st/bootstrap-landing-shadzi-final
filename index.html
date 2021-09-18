@@ -203,17 +203,25 @@
           <div class="row allform">
             <div class="col-md-6 mx-auto">
               <div class="myform form " id="myForm">
-                <form action="" method="post" name="login">
+                <ul id="form-message">
+                    <li>General-Error</li>
+
+                </ul>
+
+
+
+
+                <form action="" method="post" name="login" id="form" onsubmit="handleForm(event)">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control my-input" id="user" required 
+                    <input type="text" name="full_name" class="form-control my-input" id="fullname" required 
                       placeholder="نام و نام خانوادگی">
                   </div>
                   <div class="form-group">
-                    <input type="number" min="0" name="phone" id="smartphone" class="form-control my-input" required value="phone"
+                    <input type="number" min="0" name="mobile" id="mobileNumber" class="form-control my-input" required value="phone"
                       placeholder="شماره تماس">
                   </div>
                   <div class="text-center ">
-                    <button type="submit" class=" btn btn-block send-button tx-tfm" onclick="setCookie()">ورود به کلاس
+                    <button type="submit" id="send" class=" btn btn-block send-button tx-tfm" >ورود به کلاس
                     </button>
                   </div>
                 </form>
@@ -278,6 +286,9 @@
     <!-- own js-->
     <script src="js/main.js"></script>
 
+    <script type="text/javascript">
+      onDocLoad();
+    </script>
   </body>
 
 </html>
